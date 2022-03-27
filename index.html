@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Flickity CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- Linking Prism.JS  -->
+    <link rel="stylesheet" href="css/prism.css" />
+
+    <link rel="icon" href="img/logoPscilabFavicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <title>Pscilab &mdash; Enjoy Physics with Scilab.</title>
+  </head>
+  <body >
+    <div class="header-background-image">
+      <header class="header centered-container">
+        <p class="logo">Pscilab.</p>
+        <nav class="navbar">
+          <ul class="navlist">
+            <li><a href="#" class="navlink">Home</a></li>
+            <li><a href="#" class="navlink">Services</a></li>
+            <li><a href="#" class="navlink">About</a></li>
+            <li><a href="#" class="navlink">Contact</a></li>
+            <li><a href="#" class="navlink nav-cta">Try it</a></li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      </header>
+      <section class="hero-section">
+        <div class="hero centered-container">
+          <div class="hero-text">
+            <h1 class="hero-heading">Welcome to Pscilab.</h1>
+            <p class="hero-description">
+              Enjoy the beauty of Physics with the help of open source tool
+              Scilab.
+            </p>
+            <a href="#" class="btn btn--primary btn-margin-right">Topics</a>
+            <a href="#" class="btn btn--secondary">Try it</a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="img/hero/hero-image.png"
+              alt="Pscilab graphics"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- <img class="hero-bg-img" src="img/bluecurve1.png" alt="" /> -->
+    </div>
+
+    <!-- Carousel section -->
+    <div class="carousel-background-image-1">
+      <div class="carousel-background-image-2">
+        <div class="carousel-section">
+          <h2 class="heading-secondary">
+            Browse through various topics for code snippets
+          </h2>
+
+          <div class="carousel-container" data-flickity='{"autoplay" : true}'>
+
+            <!-- <picture data-aos="zoom-in-left" class="aos-init aos-animate">
+              <source type="image/webp" srcset="images/code/code-1.webp 1x, images/code/code-1@2x.webp 2x">
+              <source type="image/png" srcset="images/code/code-1.jpg 1x, images/code/code-1@2x.jpg 2x">
+              
+              <img src="img/code/code-1.jpg" style="width: 100%" />
+            </picture>
+
+            <picture data-aos="zoom-in-left" class="aos-init aos-animate">
+              <source type="image/webp" srcset="images/code/code-2.webp 1x, images/code/code-2@2x.webp 2x">
+              <source type="image/png" srcset="images/code/code-2.jpg 1x, images/code/code-2@2x.jpg 2x">
+              
+              <img src="img/code/code-2.jpg" style="width: 100%" />
+            </picture>
+            
+            <picture data-aos="zoom-in-left" class="aos-init aos-animate">
+              <source type="image/webp" srcset="images/code/code-3.webp 1x, images/code/code-3@2x.webp 2x">
+              <source type="image/png" srcset="images/code/code-3.jpg 1x, images/code/code-3@2x.jpg 2x">
+              
+              <img src="img/code/code-3.jpg" style="width: 100%" />
+            </picture> -->
+
+            <img src="img/code/code-3.jpg" style="width: 100%" />
+
+            <img src="img/code/code-2.jpg" style="width: 100%" />
+
+            <img src="img/code/code-3.jpg" style="width: 100%" />
+          </div>
+        </div>
+
+        <!-- Code Section -->
+        <section class="code-section">
+          <h2 class="heading-secondary">Try some example code</h2>
+          <div class="code-block">
+            <pre class="cms-code code">
+                    <code class="language-javascript">function B=gauss_filter_3_3(A)
+                        x=size(A,2);
+                        y=size(A,1);
+                        B = zeros(y, x);
+                        for j = 2:y-1
+                            for i= 2:x-1
+                                val= 4*A(j,i)+2*(A(j,i-1)+A(j,i+1)+A(j+1,i)+A(j-1,i))+A(j+1,i+1)+A(j-1,i+1)+A(j+1,i-1)+A(j-1,i-1);
+                                B(j,i) = val/16;
+                            end
+                        end
+                     endfunction
+        
+                     A = rand(10, 10) * 256;
+                     B = gauss_filter_3_3(A);</code>
+                  </pre>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Meet the creators section -->
+    <section class="creators-section creators-background-image">
+      <h2 class="heading-creator"><span> Meet the creators </span></h2>
+      <div class="creators">
+        <div class="creator creator-1">
+          <a class="creator-name" href="https://www.linkedin.com/in/subrajeet-maharana?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN9xClmuiT6CrlIR8argvBQ%3D%3D">
+          <img class="creator-img" src="img/creators/subrajeet-circular@2x.png" alt="Image of Co-creator of Pscilab Subrajeet Maharana" />
+          </a>
+          
+          <div>
+            <a class="creator-name" href="https://www.linkedin.com/in/subrajeet-maharana?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN9xClmuiT6CrlIR8argvBQ%3D%3D"
+            >Subrajeet maharana
+            </a>
+          </div>
+          <div class="creator-description">
+            Created the concept of Pscilab and put forward the design item to
+            code.
+          </div>
+        </div>
+        <div class="creator creator-2">    
+          <a href="https://www.linkedin.com/in/rakesh-kumar-nahak-a673921a4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWqq05yKmRrOum61BuEbvGA%3D%3D">
+            <img class="creator-img" src="img/creators/rakesh-circular@2x.png" alt="Image of Co-creator of Pscilab Rakesh Kumar Nahak" />
+            </a>
+          
+          <div class="creator-name">
+            <a class="creator-name" href="https://www.linkedin.com/in/rakesh-kumar-nahak-a673921a4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWqq05yKmRrOum61BuEbvGA%3D%3D"
+            >Rakesh Kumar Nahak
+            </a>
+            </div>
+          <div class="creator-description">
+            Coded the concept and still helps the large chunks of maintaining
+            it.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="about-container">
+        <p class="about">About</p>
+        <p class="about-text">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going
+          through the cites of the word in classical literature, discovered the
+          undoubtable source.
+        </p>
+        <div class="follow">
+          <p class="follow-creator">Follow the creators &vert;</p>
+          <p class="follow-creator-1">
+            <a
+              class="creator-link"
+              href="https://www.linkedin.com/in/subrajeet-maharana?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN9xClmuiT6CrlIR8argvBQ%3D%3D"
+              >Subrajeet maharana</a
+            >
+          </p>
+          <p class="follow-creator-2">
+            <a
+              class="creator-link"
+              href="https://www.linkedin.com/in/rakesh-kumar-nahak-a673921a4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWqq05yKmRrOum61BuEbvGA%3D%3D"
+              >Rakesh kumar nahak
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flickity CDN -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Linking Prism.JS -->
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

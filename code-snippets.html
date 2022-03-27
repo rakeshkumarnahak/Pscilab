@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking Prism.JS  -->
+    <link rel="stylesheet" href="css/prism.css" />
+
+    <link rel="icon" href="img/logoPscilabFavicon.ico" />
+    <link rel="stylesheet" href="css/code-snippets.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <title>Pscilab Code Snippets</title>
+  </head>
+  <body>
+    <!-- Code Section -->
+    <section class="code-section">
+      <h2 class="heading-secondary">Try some example code</h2>
+      <div class="code-block">
+        <pre class="cms-code code">
+                    <code class="language-javascript">function B=gauss_filter_3_3(A)
+                        x=size(A,2);
+                        y=size(A,1);
+                        B = zeros(y, x);
+                        for j = 2:y-1
+                            for i= 2:x-1
+                                val= 4*A(j,i)+2*(A(j,i-1)+A(j,i+1)+A(j+1,i)+A(j-1,i))+A(j+1,i+1)+A(j-1,i+1)+A(j+1,i-1)+A(j-1,i-1);
+                                B(j,i) = val/16;
+                            end
+                        end
+                     endfunction
+        
+                     A = rand(10, 10) * 256;
+                     B = gauss_filter_3_3(A);</code>
+                  </pre>
+      </div>
+    </section>
+
+    <!-- Flickity CDN -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Linking Prism.JS -->
+    <script src="js/prism.js"></script>
+  </body>
+</html>
